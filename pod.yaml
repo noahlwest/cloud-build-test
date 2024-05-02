@@ -1,0 +1,10 @@
+apiVersion: v1     
+kind: Pod                            
+metadata:
+  name: webserver-v2  
+spec:
+  containers:
+  - name: webserver  # The name that this container will have.
+    image: nginx:latest # The image on which it is based.
+    ports:               # The port(s) that will be open.
+    - containerPort: 80
